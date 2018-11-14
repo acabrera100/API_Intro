@@ -1,4 +1,4 @@
-# Dog Breed Picker
+<!-- # Dog Breed Picker
 
 "What dog breed should I get next?" Isn't that the question we all ask ourselves? Well, today, we're going to answer that question.
 
@@ -11,17 +11,17 @@ Go ahead and create two files:
 - `index.html`
 - `script.js`
 
-Before we get into how we're going to present or process our data, we need our data first. Copy + paste the JSON in the Dog API route posted above into your `script.js` file. Assign it to a variable - let's call it `APIResponse`. **Do not modify this object**. In the future, we won't have the luxury to modify our API response exactly how we want it. We'll have to process it once we receive it.
+Before we get into how we're going to present or process our data, we need our data first. Copy + paste the JSON in the Dog API route posted above into your `script.js` file. Assign it to a variable - let's call it `APIResponse`. **Do not modify this object**. In the future, we won't have the luxury to modify our API response exactly how we want it. We'll have to process it once we receive it. -->
 
-In your `index.html` file, import your JS file and create a `button` tag with the text "New Breed!". Above your button, create a header with the text "Dog Breed Picker".
+<!-- In your `index.html` file, import your JS file and create a `button` tag with the text "New Breed!". Above your button, create a header with the text "Dog Breed Picker". -->
 
-## Part 2
+<!-- ## Part 2
 
-Look again at your `APIResponse` object. You can see that it has two keys: `status` (which should contain the value `"success"`) and `message`, which contains all of our dog breeds. Each of these breeds are a key in an object, and each of them have a value, all of which are arrays. Most of these arrays are empty, but a few contain several _sub-breeds_.
+Look again at your `APIResponse` object. You can see that it has two keys: `status` (which should contain the value `"success"`) and `message`, which contains all of our dog breeds. Each of these breeds are a key in an object, and each of them have a value, all of which are arrays. Most of these arrays are empty, but a few contain several _sub-breeds_. -->
 
-Create a new array, `breedList`. This array should contain each of the breeds, _including sub-breeds_. When there is a list of sub-breeds, append each one to the beginning of the primary breed name. Capitalize the first letter of each word.
+<!-- Create a new array, `breedList`. This array should contain each of the breeds, _including sub-breeds_. When there is a list of sub-breeds, append each one to the beginning of the primary breed name. Capitalize the first letter of each word.
 
-For example, the `Bulldog` entry in the breed list, which reads: `bulldog: ["boston", "french"]` should be converted into `"Boston Bulldog, French Bulldog"`. By contrast, the entry `chihuahua: []` can be converted into simply `"Chihuahua"`.
+For example, the `Bulldog` entry in the breed list, which reads: `bulldog: ["boston", "french"]` should be converted into `"Boston Bulldog, French Bulldog"`. By contrast, the entry `chihuahua: []` can be converted into simply `"Chihuahua"`. -->
 
 ## Part 3
 
