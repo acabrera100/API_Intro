@@ -1,6 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
   let button = document.querySelector("button");
-  let picker = document.querySelector("demo");
   button.addEventListener("click", event => {
 
     let data = APIResponse.message;
@@ -21,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
     console.log(newArr);
-    demo.innerHTML = Math.floor(Math.random() * newArr.length);
+    demo.innerHTML = newArr[Math.floor(Math.random() * newArr.length)];
   });
 
   let APIResponse = {
