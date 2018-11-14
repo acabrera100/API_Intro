@@ -1,7 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
   let button = document.querySelector("button");
-  let pTag = document.querySelector("p");
-  let secondClick = document.querySelector("button")
+  let secondClick = document.querySelector("button");
+
+
   button.addEventListener("click", event => {
     let new_element_p = document.createElement("p");
     let data = APIResponse.message;
@@ -24,13 +25,17 @@ document.addEventListener("DOMContentLoaded", () => {
     // console.log(newArr);
     new_element_p.innerText = newArr[Math.floor(Math.random() * newArr.length)];
     event.target.parentNode.appendChild(new_element_p, event.target);
-
-
+      button.innerHTML = "ANUTHA WAN"
+    // debugger;
 
     secondClick.addEventListener("click", event => {
-    event.target.parentNode.appendChild(new_element_p, event.target).remove(new_element_p, event.target)
+      event.target.parentNode
+        .appendChild(new_element_p, event.target)
+        .remove(new_element_p, event.target);
+        button.innerHTML = "WOOF WOOF MUTHA UFFA"
 
-  })
+        // debugger;
+    });
   });
 
   let APIResponse = {
